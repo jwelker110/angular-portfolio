@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import './styles/variables';
+@import './styles/stylesheets/bootstrap-sprockets';
+@import './styles/stylesheets/bootstrap';
+
+* {
+  margin: 0;
+}
+html, body {
+  font-family: "Raleway";
+  height: 100%;
+}
+
+body {
+  padding-top: $navbar-height + 10;
+}
+
+
