@@ -1,5 +1,7 @@
 <h3 class="project-title">{{title}}</h3>
 <img class="project-image" [src]="imageUrl" alt="placeholder image">
 <p class="project-description">{{description}}</p>
-
-
+<div class="project-link-container">
+    <a *ngIf="projectLiveUrl" [href]="projectLiveUrl">See it live</a><span *ngIf="projectLiveUrl && projectRepoUrl"> | </span>
+    <a *ngIf="projectRepoUrl" [href]="projectRepoUrl">View the source</a>
+</div>

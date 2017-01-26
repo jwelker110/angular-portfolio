@@ -19,6 +19,6 @@ export class AppComponent {
   ]
   brand = {
     route: '',
-    text: 'Go Home'
+    text: 'Jonathan Welker'
   }
 }

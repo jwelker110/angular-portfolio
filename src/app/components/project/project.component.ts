@@ -9,7 +9,8 @@ export class ProjectComponent implements OnInit {
   @Input() title: string;
   @Input() imageUrl: string;
   @Input() description: string;
-  @Input() projectUrl: string;
+  @Input() projectLiveUrl: string;
+  @Input() projectRepoUrl: string;
 
   constructor() { }
 
@@ -22,6 +23,6 @@ export interface Project {
   title: string;
   imageUrl?: string;
   description: string;
-  projectUrl: string;
+  projectRepoUrl?: string;
   projectLiveUrl?: string;
 }

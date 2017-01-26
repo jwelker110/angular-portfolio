@@ -1,0 +1,27 @@
+.project {
+
+    &-title {
+        text-align: center;
+    }
+
+    &-image {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    &-link {
+
+        &-container {
+            text-align: center;
+            bottom: 0;
+        }
+    }
+
+    &-description {
+        margin: 10px 0;
+    }
+}
+
