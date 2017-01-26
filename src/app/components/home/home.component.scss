@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+:host {
+  display: block;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footer-height;
+}
+:host:after {
+  content: "";
+  display: block;
+  height: $footer-height;
+}

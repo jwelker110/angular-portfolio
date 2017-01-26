@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let project of projects">
+      <app-project 
+      [title]="project.title" 
+      [imageUrl]="project.imageUrl || 'http://placehold.it/350x350'" 
+      [description]="project.description"></app-project>
+  </div>
+</div>

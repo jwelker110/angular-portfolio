@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+:host {
+  display: block;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footer-height;
+}
+:host:after {
+  content: "";
+  display: block;
+  height: $footer-height;
+}
+
+#about {
+
+  &-img {
+    border-radius: 999px;
+    max-width: 250px;
+    height: 250px;
+  }
+
+  &-summary {
+    font-size: 1.1em;
+  }
+
+  &-title {
+  }
+
+  &-skill-list {
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.about {
+
+  &-skill {
+    display: inline-block;
+    margin: auto 3px;
+    font-style: italic;
+    font-variant: small-caps;
+  }
+}

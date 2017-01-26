@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+:host:after {
+  content: "";
+  display: block;
+  height: 142px;
+}
