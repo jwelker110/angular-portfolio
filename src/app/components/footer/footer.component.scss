@@ -4,5 +4,20 @@
   height: $footer-height; 
 }
 .site-footer {
+  line-height: $footer-height;  
   text-align: center;
+}
+
+a {
+  font-variant: small-caps;
+  font-weight: bold;
+  display: inline-block;
+  height: 100%;
+  padding: 0 3px;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer !important;
+    
+  }
 }
