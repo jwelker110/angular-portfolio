@@ -1,0 +1,11 @@
+<div class="skill-container">
+  <div class="skill-level-flair"
+       [ngClass]="{'beginner': skill.level === 1, 'intermediate': skill.level === 2, 'expert': skill.level === 3}">
+    <div class="skill-level-1"></div>
+    <div class="skill-level-2"></div>
+    <div class="skill-level-3"></div>
+  </div>
+  <div class="skill-name">
+    {{skill.name}}
+  </div>
+</div>
