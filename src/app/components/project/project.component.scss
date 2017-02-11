@@ -1,27 +1,82 @@
 .project {
 
-    &-title {
-        text-align: center;
-    }
+  &-title {
+    text-align: center;
+  }
 
-    &-image {
-        margin: auto;
-        display: block;
-        max-width: 90%;
-        width: 350px;
-        border-radius: 10px;
-    }
+  &-image {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    width: 350px;
+    border-radius: 10px;
+  }
 
-    &-link {
+  &-link {
 
-        &-container {
-            text-align: center;
-            bottom: 0;
+    &-container {
+      text-align: center;
+      bottom: 0;
+      font-size: 14px;
+
+      > a {
+        color: #35882d;
+
+        &:hover {
+          transition: color .6s linear;
+          color: inherit;
         }
+      }
     }
+  }
 
-    &-description {
-        margin: 10px 0;
+  &-description {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.card {
+  transition: .8s;
+  transform-style: preserve-3d;
+  position: relative;
+
+  &-container {
+    margin: 25px auto;
+    perspective: 1000px;
+
+    &:hover .card, &.hover .flipper {
+      transform: rotateY(180deg);
     }
+  }
+
+  &-container, &-front, &-back {
+    width: 100%;
+    max-width: 320px;
+    height: 420px;
+  }
+
+  &-front, &-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+
+  &-back {
+    transform: rotateY(180deg);
+  }
+
+  &-side-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 

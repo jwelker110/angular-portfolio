@@ -1,7 +1,20 @@
-<h3 class="project-title">{{title}}</h3>
-<img class="project-image" [src]="imageUrl" alt="placeholder image">
-<p class="project-description">{{description}}</p>
-<div class="project-link-container">
-    <a *ngIf="projectLiveUrl" [href]="projectLiveUrl">See it live</a><span *ngIf="projectLiveUrl && projectRepoUrl"> | </span>
-    <a *ngIf="projectRepoUrl" [href]="projectRepoUrl">View the source</a>
+<div class="card-container">
+  <div class="card">
+    <div class="card-front">
+      <div class="card-side-container">
+        <h3 class="project-title">{{title}}</h3>
+        <img class="project-image" [src]="imageUrl" alt="project image">
+      </div>
+    </div>
+    <div class="card-back">
+      <div class="card-side-container">
+        <p class="project-description">{{description}}</p>
+        <div class="project-link-container">
+          <a *ngIf="projectLiveUrl" [href]="projectLiveUrl" target="_blank">See it live</a><span
+          *ngIf="projectLiveUrl && projectRepoUrl"> | </span>
+          <a *ngIf="projectRepoUrl" [href]="projectRepoUrl" target="_blank">View the source</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
