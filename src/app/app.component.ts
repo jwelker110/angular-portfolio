@@ -9,14 +9,10 @@ export class AppComponent {
   // todo move these
   navs = [
     {
-      route: '/about',
-      text: 'About'
-    },
-    {
       route: '/projects',
       text: 'Projects'
     }
-  ]
+  ];
   brand = {
     route: '',
     text: 'Jonathan Welker'
