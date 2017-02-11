@@ -1,4 +1,6 @@
-$skill-bg: #04044d;
+@import '../../../styles/stylesheets/bootstrap/variables';
+
+$skill-bg: $theme-highlight-color;
 
 .skill-container {
   display: inline-block;
