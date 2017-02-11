@@ -1,0 +1,48 @@
+@import '../../../styles/stylesheets/bootstrap/variables';
+
+
+.navbar-default .navbar-nav > li {
+
+  > a {
+
+    &.active {
+
+    }
+  }
+}
+
+.navbar-brand-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar.navbar-default {
+    width: 100%;
+    border-bottom: solid 1px $theme-highlight-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand-desktop {
+    display: none;
+  }
+
+  .navbar-brand-mobile {
+    display: inherit;
+  }
+
+  .navbar-header {
+    border-bottom: solid 1px $theme-highlight-color;
+  }
+
+  .navbar-collapse {
+    text-align: right;
+    transition: max-height .4s linear;
+    max-height: 0;
+    overflow-y: hidden;
+  }
+
+  .nav-open {
+    max-height: 300px;
+  }
+}
