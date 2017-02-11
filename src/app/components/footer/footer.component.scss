@@ -1,10 +1,11 @@
-@import '../../../styles/variables';
+@import '../../../styles/stylesheets/bootstrap/variables';
 
 .site-footer {
-  height: $footer-height; 
+  height: $footer-height;
 }
+
 .site-footer {
-  line-height: $footer-height;  
+  line-height: $footer-height - 10px;
   text-align: center;
 }
 
@@ -13,11 +14,14 @@ a {
   font-weight: bold;
   display: inline-block;
   height: 100%;
-  padding: 0 3px;
+  padding: 0 5px;
+  margin: 5px auto;
+  color: #000;
+  transition: color .4s linear;
 
   &:hover {
     text-decoration: none;
     cursor: pointer !important;
-    
+    color: $theme-highlight-color;
   }
 }
