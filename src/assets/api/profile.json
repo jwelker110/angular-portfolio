@@ -1,0 +1,60 @@
+{
+  "avatarUrl": "/assets/img/profile.jpg",
+  "name": "Jonathan Welker",
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": 2
+    },
+    {
+      "name": "Angular 2",
+      "level": 1
+    },
+    {
+      "name": "HTML",
+      "level": 2
+    },
+    {
+      "name": "CSS",
+      "level": 2
+    },
+    {
+      "name": "Python",
+      "level": 2
+    },
+    {
+      "name": "Bootstrap",
+      "level": 2
+    },
+    {
+      "name": "SQL",
+      "level": 1
+    }
+  ],
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dolorem. Repellendus, atque minus reprehenderit laboriosaminventore sapiente nihil. Vitae tempore, qui debitis. Perspiciatis id, eligendi deleniti quas recusandae odit reprehenderitipsum veritatis, possimus distinctio minima rem ipsam nulla. Ipsum veniam quis at blanditiis eum maiores maxime id",
+  "resume": "",
+  "locationCity": "Baton Rouge",
+  "locationRegion": "LA",
+  "links": [
+    {
+      "url": "https://www.linkedin.com/in/jonathanzwelker/",
+      "text": "LinkedIn",
+      "icon": "linkedin"
+    },
+    {
+      "url": "https://github.com/jwelker110",
+      "text": "GitHub",
+      "icon": "github"
+    },
+    {
+      "url": "http://stackoverflow.com/users/5626385/jonathan-welker",
+      "text": "Stack Overflow",
+      "icon": "stack-overflow"
+    },
+    {
+      "url": "http://scalablewebdesign.net",
+      "text": "Personal Website",
+      "icon": "user"
+    }
+  ]
+}

@@ -1,42 +1,42 @@
 [
   {
-    "title": "This is the very First Project",
-    "imageUrl": "http://placehold.it/350x350",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore accusamus ex ratione rem eligendi. Neque ut expedita explicabo assumenda eaque debitis a sed voluptate.",
+    "title": "U&B Winery",
+    "imageUrl": "/assets/img/ubwinery.png",
+    "description": "The goal of this project was to transform an existing PHP website using Angular 2.",
     "projectRepoUrl": "https://github.com/jwelker110/udacity-blitz-winery",
     "projectLiveUrl": "http://jwelker.com"
   },
   {
-    "title": "Second Project",
-    "imageUrl": "http://placehold.it/350x350",
-    "description": "Lorem ipsum dolor sit amet. Distinctio dolore accusamus ex ratione rem eligendi. Neque ut expedita explicabo assumenda eaque debitis a sed voluptate.",
-    "projectRepoUrl": "https://github.com/jwelker110/udacity-blitz-winery"
+    "title": "Neighborhood Map",
+    "imageUrl": "/assets/img/neighborhoodmap.png",
+    "description": "A simple map using Google's Map API, augmented with Foursquare to provide location information.",
+    "projectRepoUrl": "https://github.com/jwelker110/neighborhood-map",
+    "projectLiveUrl": "https://jwelker110.github.io/neighborhood-map/"
   },
   {
-    "title": "Third Project",
-    "imageUrl": "http://placehold.it/350x350",
-    "description": "Lorem ipsum consectetur adipisicing elit. Distinctio rem eligendi. Neque ut  eaque debitis a sed voluptate.",
-    "projectRepoUrl": "https://github.com/jwelker110/udacity-blitz-winery",
-    "projectLiveUrl": "http://jwelker.com"
+    "title": "Multi-User Blog",
+    "imageUrl": "/assets/img/multiuserblog.png",
+    "description": "Google App Engine Python powered blog. Users can view and like each other's posts. They can edit and delete their own.",
+    "projectRepoUrl": "https://github.com/jwelker110/multi-user-blog",
+    "projectLiveUrl": "https://multi-user-blog-1340.appspot.com/"
   },
   {
-    "title": "First Project",
-    "imageUrl": "http://placehold.it/350x350",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore accusamus ex ratione rem eligendi. Neque ut expedita explicabo assumenda eaque debitis a sed voluptate.",
-    "projectRepoUrl": "https://github.com/jwelker110/udacity-blitz-winery",
-    "projectLiveUrl": "http://jwelker.com"
+    "title": "Yahtzee! Game API",
+    "imageUrl": "/assets/img/yahtzeeapi.png",
+    "description": "Another Google App Engine Python project. This API can be used to power a frontend implementation of the popular game.",
+    "projectRepoUrl": "https://github.com/jwelker110/yahtzee-api",
+    "projectLiveUrl": "https://apis-explorer.appspot.com/apis-explorer/?base=https://yahtzee-142109.appspot.com/_ah/api#p/"
   },
   {
-    "title": "Second Project",
-    "imageUrl": "http://placehold.it/350x350",
-    "description": "Lorem ipsum dolor sit amet. Distinctio dolore accusamus ex ratione rem eligendi. Neque ut expedita explicabo assumenda eaque debitis a sed voluptate.",
-    "projectRepoUrl": "https://github.com/jwelker110/udacity-blitz-winery"
+    "title": "Store App",
+    "imageUrl": "/assets/img/storeapp.png",
+    "description": "The popular Python Flask framework with SQLAlchemy paired with an AngularJS frontend provided the building blocks for this project. Registered users may post, edit, and remove their categorized items. Additional information, such as cost, stock, description, and product images can be added.",
+    "projectRepoUrl": "https://github.com/jwelker110/store_backend"
   },
   {
-    "title": "Third Project",
-    "imageUrl": "http://placehold.it/350x350",
-    "description": "Lorem ipsum consectetur adipisicing elit. Distinctio rem eligendi. Neque ut  eaque debitis a sed voluptate.",
-    "projectRepoUrl": "https://github.com/jwelker110/udacity-blitz-winery",
-    "projectLiveUrl": "http://jwelker.com"
+    "title": "Scalable Web Design",
+    "imageUrl": "/assets/img/scalablewebdesign.png",
+    "description": "",
+    "projectLiveUrl": "http://scalablewebdesign.net"
   }
 ]
