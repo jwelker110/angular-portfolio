@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/variables';
 @import './styles/stylesheets/bootstrap-sprockets';
 @import './styles/stylesheets/bootstrap';
 
@@ -7,16 +6,41 @@
   margin: 0;
 }
 html, body {
-  font-family: "Raleway";
+  font-family: "Raleway", 'sans-serif';
   height: 100%;
 }
 
 body {
-  padding-top: $navbar-height + 10;
+  padding-top: $navbar-height;
 }
 
-a:hover {
-  text-decoration: none !important;
+a {
+  transition: color .4s linear;
+  color: $theme-highlight-color;
+
+  &.inverted {
+    color: $theme-text-color;
+
+    &:hover {
+      color: $theme-highlight-color;
+    }
+  }
+
+  &:hover {
+    color: initial;
+    text-decoration: none !important;
+  }
 }
+
+.navbar-toggle .icon-bar {
+  width: 3px;
+  height: 3px;
+  border-radius: 33px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 2px;
+}
+
 
 
