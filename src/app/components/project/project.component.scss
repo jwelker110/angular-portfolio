@@ -1,3 +1,5 @@
+@import '../../../styles/stylesheets/bootstrap/variables';
+
 .project {
 
   &-title {
@@ -20,7 +22,7 @@
       font-size: 14px;
 
       > a {
-        color: #35882d;
+        color: $theme-highlight-color;
 
         &:hover {
           transition: color .6s linear;
