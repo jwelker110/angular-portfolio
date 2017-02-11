@@ -1,4 +1,5 @@
-@import '../../../styles/variables';
+@import '../../../styles/stylesheets/bootstrap/variables';
+
 
 :host {
   display: block;
@@ -16,24 +17,43 @@
 
   &-img {
     border-radius: 999px;
-    max-width: 250px;
-    height: 250px;
+    max-width: 125px;
+    display: block;
+    margin: auto;
+  }
+
+  &-name, &-location {
+    text-align: center;
   }
 
   &-summary {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   &-title {
   }
 
-  &-skill-list {
-    padding: 0;
-    list-style-type: none;
+  &-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  &-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    font-variant: small-caps;
   }
 }
 
 .about {
+
+  &-link {
+    margin: 5px 8px;
+  }
 
   &-skill {
     display: inline-block;

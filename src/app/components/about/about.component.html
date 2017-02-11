@@ -1,18 +1,20 @@
-<div class="container text-center">
-  <img id="about-img" [src]="'http://placehold.it/250x250'" />
-  <h1 id="about-title">Jonathan Welker</h1>
-  <ul id="about-skill-list">
-    <li class="about-skill" *ngFor="let skill of skills">{{skill}}</li>
-  </ul>
+<div class="container">
+  <img id="about-img" [src]="userProfile.avatarUrl || 'http://placehold.it/250x250'"/>
+  <h4 id="about-name"><strong>{{userProfile.name}}</strong></h4>
+  <h5 id="about-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{userProfile.locationCity +
+    (userProfile.locationRegion ? ', ' : '') + userProfile.locationRegion}}</h5>
+
+  <div id="about-links">
+    <a class="about-link inverted" target="_blank" [href]="link.url" *ngFor="let link of userProfile.links" [title]="link.text">
+      <i [ngClass]="link.icon ? 'fa fa-' + link.icon : ''"></i>
+    </a>
+  </div>
+
+  <div id="about-skills">
+    <app-skill *ngFor="let skill of userProfile.skills" [skill]="skill"></app-skill>
+  </div>
+
   <div id="about-summary">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dolorem. Repellendus, atque minus reprehenderit laboriosam
-      inventore sapiente nihil. Vitae tempore, qui debitis. Perspiciatis id, eligendi deleniti quas recusandae odit reprehenderit
-      ipsum veritatis, possimus distinctio minima rem ipsam nulla. Ipsum veniam quis at blanditiis eum maiores maxime id
-      iure ad asperiores corporis, ullam facere debitis possimus reprehenderit perspiciatis facilis libero exercitationem!
-      Provident in laudantium temporibus quam maxime, cumque, nobis reprehenderit, quaerat obcaecati aliquid dolorum quae
-      officiis repellat. Facilis nostrum iusto harum, illum nisi unde eos voluptates, autem labore quos officiis sequi obcaecati
-      omnis, quia rem aut necessitatibus quam asperiores dolores dolorem!
-    </p>
+    <p>{{userProfile.bio}}</p>
   </div>
 </div>
