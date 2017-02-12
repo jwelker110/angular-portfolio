@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ProjectsComponent} from "./components/projects/projects.component";
+import {AboutComponent} from "./components/about/about.component";
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: 'app/components/about/about.module#AboutModule'
+    component: AboutComponent
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    loadChildren: 'app/components/projects/projects.module#ProjectsModule'
   },
   {
     path: '**',
