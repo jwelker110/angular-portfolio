@@ -7,7 +7,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
-import {HomeComponent} from './components/home/home.component';
 import {ProjectComponent} from './components/project/project.component';
 import {ProjectService} from './services/project.service';
 import {ProfileService} from "./services/profile.service";
@@ -19,7 +18,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    HomeComponent,
     ProjectComponent,
     ProjectsComponent
   ],
