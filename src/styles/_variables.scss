@@ -1,31 +1,26 @@
+@import "colors";
+/*!
+ * Import themes right here
+ */
+@import "themes/dark";
+
+
 // $bootstrap-sass-asset-helper: false !default;
 // //
 // // Variables
 // // --------------------------------------------------
-$violet: #5e0e8a;
-$purple: #a314b2;
-$pink: #ff66cc;
-$salmon: #ff795e;
-$red: #ff4430;
-$mango: #dd782d;
-$yellow-orange: #fbbc05;
-$light-brown: #BFAF80;
-$brown: #8C6954;
-$green: #35882d;
-$google-green: #34a853;
-$ocean-green: #3DAE8B;
-$light-blue: #5dacff;
-$dark-blue: #140e6e;
-$facebook-blue: #4267b2;
-
-
 $footer-height: 50px;
 $body-padding-top: 50px;
-$theme-highlight-color: $yellow-orange;
-$theme-subtle-color: #666666;
-$theme-text-color: #000;
+$theme-highlight-color: $color-mango !default;
+$theme-subtle-color: #666666 !default;
+$theme-text-color: #000 !default;
+$theme-bg-color: #fff !default;
 
-$theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color;
+$theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color !default;
+$theme-border-color: $theme-highlight-color !default;
+$theme-navbar-transparency: .1 !default;
+
+$navbar-default-bg: transparentize($theme-bg-color, $theme-navbar-transparency);
 
 // //== Colors
 // //
@@ -397,8 +392,8 @@ $navbar-default-bg:                rgba(255, 255, 255, .9) !default;
 $navbar-default-border:            none;
 
 // // Navbar links
- $navbar-default-link-color:                $theme-subtle-color;
-// $navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-color:                $theme-subtle-color;
+$navbar-default-link-hover-color:         $theme-text-color;
 // $navbar-default-link-hover-bg:             transparent !default;
 // $navbar-default-link-active-color:         #555 !default;
 // $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -406,14 +401,14 @@ $navbar-default-border:            none;
 // $navbar-default-link-disabled-bg:          transparent !default;
 
 // // Navbar brand label
-// $navbar-default-brand-color:               $navbar-default-link-color !default;
+ $navbar-default-brand-color:               $navbar-default-link-color !default;
 // $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
 // $navbar-default-brand-hover-bg:            transparent !default;
 
 // // Navbar toggle
- $navbar-default-toggle-hover-bg:           transparent;
- $navbar-default-toggle-icon-bar-bg:        $theme-highlight-color;
- $navbar-default-toggle-border-color:       transparent;
+$navbar-default-toggle-hover-bg:           transparent !default;
+$navbar-default-toggle-icon-bar-bg:        $theme-highlight-color !default;
+$navbar-default-toggle-border-color:       transparent !default;
 
 
 // //=== Inverted navbar

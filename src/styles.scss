@@ -12,6 +12,8 @@ html, body {
 
 body {
   padding-top: $navbar-height + 1 + $body-padding-top;
+  background: $theme-bg-color;
+  color: $theme-text-color;
 }
 
 a {
@@ -30,6 +32,14 @@ a {
     color: initial;
     text-decoration: none !important;
   }
+}
+
+.port-vert-space {
+  margin: 15px auto;
+}
+
+.port-section-title {
+  color: $theme-subtle-color;
 }
 
 .navbar-toggle .icon-bar {

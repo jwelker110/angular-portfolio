@@ -1,14 +1,8 @@
 @import '../../../styles/stylesheets/bootstrap/variables';
 
 
-.navbar-default .navbar-nav > li {
-
-  > a {
-
-    &.active {
-
-    }
-  }
+.active, .active:focus {
+  color: $theme-text-color !important;
 }
 
 .navbar-collapse,
@@ -23,7 +17,7 @@
 @media screen and (min-width: 768px) {
   .navbar.navbar-default {
     width: 100%;
-    border-bottom: solid 1px $theme-highlight-color;
+    border-bottom: solid 1px $theme-border-color;
   }
 }
 
