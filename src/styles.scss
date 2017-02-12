@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  padding-top: $navbar-height;
+  padding-top: $navbar-height + 1 + $body-padding-top;
 }
 
 a {

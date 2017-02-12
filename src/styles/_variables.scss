@@ -2,10 +2,29 @@
 // //
 // // Variables
 // // --------------------------------------------------
+$violet: #5e0e8a;
+$pink: #ff66cc;
+$salmon: #ff795e;
+$red: #ff4430;
+$mango: #dd782d;
+$light-brown: #BFAF80;
+$brown: #8C6954;
+$yellow-orange: #fbbc05;
+$green: #35882d;
+$google-green: #34a853;
+$ocean-green: #3DAE8B;
+$light-blue: #5dacff;
+$dark-blue: #140e6e;
+$facebook-blue: #4267b2;
+
+
 $footer-height: 50px;
-$theme-highlight-color: #35882d;
+$body-padding-top: 50px;
+$theme-highlight-color: $salmon;
 $theme-subtle-color: #555;
 $theme-text-color: #000;
+
+$theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color;
 
 // //== Colors
 // //
