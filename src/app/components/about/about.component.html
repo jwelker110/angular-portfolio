@@ -1,12 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <img id="about-img" [src]="userProfile.avatarUrl || 'http://placehold.it/250x250'"/>
+      <img id="about-img" [src]="userProfile.avatarUrl ? '/assets/img/' + userProfile.avatarUrl : 'http://placehold.it/250x250'"/>
       <h3 class="port-vert-space" id="about-name"><strong>{{userProfile.name}}</strong></h3>
       <h5 class="port-vert-space" id="about-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{userProfile.locationCity +
         (userProfile.locationRegion ? ', ' : '') + userProfile.locationRegion}}</h5>
     </div>
   </div>
+
   <div class="row">
     <div class="col-xs-12">
       <section class="port-vert-space" id="about-links">
@@ -16,32 +17,30 @@
       </section>
     </div>
   </div>
+
   <div class="row">
     <div class="col-xs-12">
-      <div class="port-vert-space" id="about-summary">
-        <p>{{userProfile.bio}}</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-6">
-      <section class="port-vert-space">
-        <p class="port-section-title">Section 1</p>
+      <section class="port-vert-space" id="about-summary">
         <p>{{userProfile.bio}}</p>
       </section>
+      <hr>
     </div>
-    <div class="col-sm-6">
+  </div>
+
+  <div class="row row-flex">
+    <div class="col-sm-6" *ngFor="let detail of userProfile.details">
       <section class="port-vert-space">
-        <p class="port-section-title">Section 2</p>
-        <p>{{userProfile.bio}}</p>
+        <p class="port-section-title">{{detail.title}}</p>
+        <p class="port-section-detail">{{detail.content}}</p>
       </section>
     </div>
   </div>
+
   <div class="row">
     <div class="col-xs-12">
-      <div class="port-vert-space" id="about-skills">
+      <section class="port-vert-space" id="about-skills">
         <app-skill *ngFor="let skill of userProfile.skills" [skill]="skill"></app-skill>
-      </div>
+      </section>
     </div>
   </div>
 

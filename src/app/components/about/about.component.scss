@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     font-size: 14px;
-    font-style: italic;
+    //font-style: italic;
     font-variant: small-caps;
     color: $theme-subtle-color;
     border-top: solid 1px $theme-subtle-color;
@@ -68,8 +68,9 @@
 .about {
 
   &-link {
-    margin: 5px 8px;
-    font-size: 1.2em;
+    padding: 5px;
+    margin: auto 8px;
+    font-size: 20px;
   }
 
   &-skill {

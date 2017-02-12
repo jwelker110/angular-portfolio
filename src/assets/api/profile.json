@@ -1,5 +1,5 @@
 {
-  "avatarUrl": "/assets/img/profile.jpg",
+  "avatarUrl": "profile.jpg",
   "name": "Jonathan Welker",
   "skills": [
     {
@@ -31,7 +31,21 @@
       "level": 1
     }
   ],
-  "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dolorem. Repellendus, atque minus reprehenderit laboriosaminventore sapiente nihil. Vitae tempore, qui debitis. Perspiciatis id, eligendi deleniti quas recusandae odit reprehenderitipsum veritatis, possimus distinctio minima rem ipsam nulla. Ipsum veniam quis at blanditiis eum maiores maxime id",
+  "bio": "I am a passionate and focused programmer seeking opportunities to help others using the skills I have learned, and continuously challenge myself to keep learning new and exciting technologies and methodologies.",
+  "details": [
+    {
+      "title": "What do you enjoy most about web development?",
+      "content": "The best part about web development is the cycle of learning. Things are always changing and it's exciting to adapt to new technologies and implementations."
+    },
+    {
+      "title": "If you could master any one technology, language or framework this upcoming year, what would that be and why?",
+      "content": "Angular 2 with TypeScript is a powerful framework. Angular 2 allows building fast, scalable applications that work across devices and in a mobile world like today that's crucial to ensure reaching the broadest audience. Coupled with TypeScript, you have a framework that encourages organization and consistency."
+    },
+    {
+      "title": "What are the qualities you most desire in a work environment and/or manager?",
+      "content": "I want to be around people that are as passionate as I am about web development. Working with people that are as excited to learn as I am provides one of the best experiences and encourages personal and professional growth."
+    }
+  ],
   "resume": "",
   "locationCity": "Baton Rouge",
   "locationRegion": "LA",

@@ -6,11 +6,17 @@ export interface UserSkill {
   level: number;
 }
 
+export interface UserDetail {
+  title?: string;
+  content: string;
+}
+
 interface UserProfile {
   avatarUrl?: string;
   name: string;
   skills?: UserSkill[];
-  bio: string;
+  bio?: string;
+  details?: UserDetail[];
   resume?: string;
   links?: Link[];
   stackOverflow?: string;
