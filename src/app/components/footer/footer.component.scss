@@ -22,4 +22,9 @@ a {
     cursor: pointer !important;
     color: $theme-highlight-color;
   }
+
+  > i {
+    font-size: 20px;
+  }
+
 }
