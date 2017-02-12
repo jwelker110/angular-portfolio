@@ -1,20 +1,48 @@
 <div class="container">
-  <img id="about-img" [src]="userProfile.avatarUrl || 'http://placehold.it/250x250'"/>
-  <h4 id="about-name"><strong>{{userProfile.name}}</strong></h4>
-  <h5 id="about-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{userProfile.locationCity +
-    (userProfile.locationRegion ? ', ' : '') + userProfile.locationRegion}}</h5>
-
-  <div id="about-links">
-    <a class="about-link inverted" target="_blank" [href]="link.url" *ngFor="let link of userProfile.links" [title]="link.text">
-      <i [ngClass]="link.icon ? 'fa fa-' + link.icon : ''"></i>
-    </a>
+  <div class="row">
+    <div class="col-xs-12">
+      <img id="about-img" [src]="userProfile.avatarUrl || 'http://placehold.it/250x250'"/>
+      <h3 class="port-vert-space" id="about-name"><strong>{{userProfile.name}}</strong></h3>
+      <h5 class="port-vert-space" id="about-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{userProfile.locationCity +
+        (userProfile.locationRegion ? ', ' : '') + userProfile.locationRegion}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <section class="port-vert-space" id="about-links">
+        <a class="about-link inverted" target="_blank" [href]="link.url" *ngFor="let link of userProfile.links" [title]="link.text">
+          <i [ngClass]="link.icon ? 'fa fa-' + link.icon : ''"></i>
+        </a>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="port-vert-space" id="about-summary">
+        <p>{{userProfile.bio}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <section class="port-vert-space">
+        <p class="port-section-title">Section 1</p>
+        <p>{{userProfile.bio}}</p>
+      </section>
+    </div>
+    <div class="col-sm-6">
+      <section class="port-vert-space">
+        <p class="port-section-title">Section 2</p>
+        <p>{{userProfile.bio}}</p>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="port-vert-space" id="about-skills">
+        <app-skill *ngFor="let skill of userProfile.skills" [skill]="skill"></app-skill>
+      </div>
+    </div>
   </div>
 
-  <div id="about-skills">
-    <app-skill *ngFor="let skill of userProfile.skills" [skill]="skill"></app-skill>
-  </div>
-
-  <div id="about-summary">
-    <p>{{userProfile.bio}}</p>
-  </div>
 </div>
