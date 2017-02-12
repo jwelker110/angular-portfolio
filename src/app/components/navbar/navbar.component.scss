@@ -10,6 +10,11 @@
   border: none;
 }
 
+.nav.navbar-nav > li,
+.navbar-brand {
+  font-variant: $theme-nav-font-variant;
+}
+
 .navbar-brand-mobile {
   display: none;
 }
