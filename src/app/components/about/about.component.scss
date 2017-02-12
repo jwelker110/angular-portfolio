@@ -20,6 +20,8 @@
     max-width: 125px;
     display: block;
     margin: auto;
+    border: solid 1px $theme-highlight-color;
+    box-shadow: $theme-subtle-shadow;
   }
 
   &-name, &-location {
