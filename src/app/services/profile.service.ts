@@ -17,7 +17,7 @@ export class ProfileService {
         observer.next(this._userProfile);
       });
     }
-    return this._http.get('/assets/api/profile.json')
+    return this._http.get('/api/v1/profile')
       .catch((error: Response | any) => {
         let errMsg: string;
 

@@ -9,7 +9,7 @@ export class ProjectService {
   constructor(private _http: Http) {}
 
   getProjects() {
-    return this._http.get('/assets/api/projects.json')
+    return this._http.get('/api/v1/projects')
       .catch((error: Response | any) => {
         let errMsg: string;
 
