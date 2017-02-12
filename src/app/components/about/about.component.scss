@@ -28,6 +28,11 @@
     text-align: center;
   }
 
+
+  &-location {
+    color: $theme-subtle-color;
+  }
+
   &-summary {
     font-size: 1em;
   }
@@ -46,8 +51,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 14px;
     font-variant: small-caps;
+    color: $theme-subtle-color;
   }
 }
 
