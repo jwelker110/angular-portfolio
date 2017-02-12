@@ -4,22 +4,26 @@
  */
 @import "themes/dark";
 
-
 // $bootstrap-sass-asset-helper: false !default;
 // //
 // // Variables
 // // --------------------------------------------------
 $footer-height: 50px;
 $body-padding-top: 50px;
-$theme-highlight-color: $color-mango !default;
-$theme-subtle-color: #666666 !default;
+
+$theme-highlight-color: $color-light-orange !default;
+$theme-subtle-color: #666 !default;
 $theme-text-color: #000 !default;
 $theme-bg-color: #fff !default;
 
+$theme-title-weight: bold !default;
+$theme-title-style: italic !default;
+$theme-nav-font-variant: small-caps !default;
+
 $theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color !default;
 $theme-border-color: $theme-highlight-color !default;
-$theme-navbar-transparency: .1 !default;
 
+$theme-navbar-transparency: .1 !default;
 $navbar-default-bg: transparentize($theme-bg-color, $theme-navbar-transparency);
 
 // //== Colors

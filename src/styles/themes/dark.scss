@@ -2,9 +2,9 @@ $theme-subtle-color: #888;
 $theme-text-color: #fff;
 $theme-bg-color: #000;
 
-$theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color;
+$theme-subtle-shadow: 0 0 10px 0px $theme-highlight-color;
 $theme-border-color: $theme-highlight-color;
-$theme-navbar-transparency: .2;
+$theme-navbar-transparency: .3;
 
 $navbar-default-link-color:                 $theme-subtle-color;
 $navbar-default-link-hover-color:           $theme-text-color;

@@ -16,6 +16,10 @@ body {
   color: $theme-text-color;
 }
 
+hr {
+  border-color: $theme-subtle-color;
+}
+
 a {
   transition: color .4s linear;
   color: $theme-highlight-color;
@@ -38,8 +42,18 @@ a {
   margin: 15px auto;
 }
 
-.port-section-title {
-  color: $theme-subtle-color;
+.port-section {
+  &-title {
+    font-weight: $theme-title-weight;
+    font-style: $theme-title-style;
+    color: $theme-subtle-color;
+    font-size: 1.1em;
+  }
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar-toggle .icon-bar {
@@ -53,4 +67,9 @@ a {
 }
 
 
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+}
 
