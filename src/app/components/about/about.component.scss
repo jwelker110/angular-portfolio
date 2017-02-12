@@ -59,8 +59,8 @@
     //font-style: italic;
     font-variant: small-caps;
     color: $theme-subtle-color;
-    border-top: solid 1px $theme-subtle-color;
-    border-bottom: solid 1px $theme-subtle-color;
+    border-top: solid 1px $theme-border-color;
+    border-bottom: solid 1px $theme-border-color;
     padding: 10px;
   }
 }
