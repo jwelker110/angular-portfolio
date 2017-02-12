@@ -1,4 +1,4 @@
-<div class="skill-container">
+<div class="skill-container" [title]="skill.level === 1 ? 'Familiar' : skill.level === 2 ? 'Proficient' : 'Mastered'">
   <div class="skill-level-flair"
        [ngClass]="{'beginner': skill.level === 1, 'intermediate': skill.level === 2, 'expert': skill.level === 3}">
     <div class="skill-level-1"></div>
