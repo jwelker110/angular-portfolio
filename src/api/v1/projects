@@ -28,12 +28,6 @@
     "projectLiveUrl": "https://apis-explorer.appspot.com/apis-explorer/?base=https://yahtzee-142109.appspot.com/_ah/api#p/"
   },
   {
-    "title": "Store App",
-    "imageUrl": "",
-    "description": "The popular Python Flask framework with SQLAlchemy paired with an AngularJS frontend provided the building blocks for this project. Registered users may post, edit, and remove their categorized items. Additional information, such as cost, stock, description, and product images can be added.",
-    "projectRepoUrl": "https://github.com/jwelker110/store_backend"
-  },
-  {
     "title": "Scalable Web Design",
     "imageUrl": "scalablewebdesign.png",
     "description": "",
