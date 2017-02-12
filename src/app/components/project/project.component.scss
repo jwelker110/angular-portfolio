@@ -1,10 +1,15 @@
 @import '../../../styles/stylesheets/bootstrap/variables';
 
+$title-color: $theme-highlight-color;
+$link-color: $theme-highlight-color;
+$link-font-variant: $theme-nav-font-variant;
+$description-color: $theme-subtle-color;
+
 .project {
 
   &-title {
     text-align: center;
-    color: $theme-highlight-color;
+    color: $title-color;
   }
 
   &-image {
@@ -23,7 +28,8 @@
       font-size: 14px;
 
       > a {
-        color: $theme-highlight-color;
+        font-variant: $link-font-variant;
+        color: $link-color;
 
         &:hover {
           transition: color .6s linear;
@@ -36,7 +42,7 @@
   &-description {
     text-align: center;
     margin: 10px 0;
-    color: $theme-subtle-color;
+    color: $description-color;
   }
 }
 
