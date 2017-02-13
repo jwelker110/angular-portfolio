@@ -10,6 +10,10 @@
   border: none;
 }
 
+.nav.navbar-nav > li {
+  font-size: 20px;
+}
+
 .nav.navbar-nav > li,
 .navbar-brand {
   font-variant: $theme-nav-font-variant;
