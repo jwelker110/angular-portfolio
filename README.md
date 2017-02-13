@@ -33,7 +33,7 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 ## Adjusting the colors
 1. Colors are stored in _styles/\_colors.scss_. Change the value of _$theme-highlight-color_ to change the 
-project-wide_ color.
+project-wide color.
 2. A "Dark Theme" has been included as well, and is disabled by default. To enable it, open 
 _styles/\_variables.scss_ and uncomment `//@import "themes/dark";`
 3. The colors provided consist of a "dark", "neutral", and "light" variant for most of them. Use "light"
