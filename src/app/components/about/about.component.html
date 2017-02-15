@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <img id="about-img" [src]="userProfile.avatarUrl ? '/assets/img/' + userProfile.avatarUrl : 'http://placehold.it/250x250'"/>
+      <img id="about-img" [src]="userProfile.avatarUrl ? '/assets/img/' + userProfile.avatarUrl : 'https://placehold.it/250x250'"/>
       <h3 class="port-vert-space" id="about-name"><strong>{{userProfile.name}}</strong></h3>
       <h5 class="port-vert-space" id="about-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{userProfile.locationCity +
         (userProfile.locationRegion ? ', ' : '') + userProfile.locationRegion}}</h5>
