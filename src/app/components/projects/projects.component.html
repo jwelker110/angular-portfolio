@@ -3,7 +3,7 @@
     <div class="col-sm-6 col-md-4" *ngFor="let project of projects">
       <app-project
         [title]="project.title"
-        [imageUrl]="project.imageUrl ? '/assets/img/' + project.imageUrl : 'http://placehold.it/288x160'"
+        [imageUrl]="project.imageUrl ? '/assets/img/' + project.imageUrl : 'https://placehold.it/288x160'"
         [description]="project.description"
         [projectLiveUrl]="project.projectLiveUrl"
         [projectRepoUrl]="project.projectRepoUrl"></app-project>
