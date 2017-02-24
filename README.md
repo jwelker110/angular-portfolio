@@ -39,3 +39,9 @@ _styles/\_variables.scss_ and uncomment `//@import "themes/dark";`
 3. The colors provided consist of a "dark", "neutral", and "light" variant for most of them. Use "light"
 colors in combination with the "Dark Theme" and "dark" colors with the default theme. Neutral colors tend
 to look fine paired with either theme.
+
+### Dark Theme
+<img max-width="100%" src="https://github.com/jwelker110/ng2-portfolio/blob/master/src/assets/screenshots/theme-dark.png" >
+
+### Default Theme
+<img max-width="100%" src="https://github.com/jwelker110/ng2-portfolio/blob/master/src/assets/screenshots/theme-default.png" >
