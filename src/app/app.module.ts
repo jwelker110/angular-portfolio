@@ -10,7 +10,7 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import {ProjectService} from './services/project.service';
 import {ProfileService} from "./services/profile.service";
 import {SharedModule} from "./modules/shared.module";
-import {AboutComponent} from "./components/about/about.component";
+import {AboutComponent} from "./features/about/about.component";
 
 @NgModule({
   declarations: [
