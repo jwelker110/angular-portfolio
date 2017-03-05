@@ -4,6 +4,7 @@
 :host {
   display: block;
   min-height: 100%;
+  padding-top: 50px;
   /* equal to footer height */
   margin-bottom: -$footer-height;
 }
