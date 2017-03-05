@@ -19,3 +19,11 @@ export interface Link {
   text: string;
   icon?: string;
 }
+
+export interface Project {
+  title: string;
+  imageUrl?: string;
+  description: string;
+  projectRepoUrl?: string;
+  projectLiveUrl?: string;
+}
