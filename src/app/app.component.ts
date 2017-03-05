@@ -1,20 +1,24 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // todo move these
-  navs = [
-    {
-      route: '/projects',
-      text: 'Projects'
+    // todo move these
+    navs = [
+        {
+            route: '',
+            text: 'Home'
+        },
+        {
+            route: '/projects',
+            text: 'Projects'
+        }
+    ];
+    brand = {
+        route: '',
+        text: 'Jonathan Welker'
     }
-  ];
-  brand = {
-    route: '',
-    text: 'Jonathan Welker'
-  }
 }
