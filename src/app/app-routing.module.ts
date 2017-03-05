@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AboutComponent} from "./components/about/about.component";
+import {AboutComponent} from "./features/about/about.component";
 
 const routes: Routes = [
   {
@@ -9,11 +9,19 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    loadChildren: 'app/components/projects/projects.module#ProjectsModule'
+    loadChildren: 'app/features/projects/projects.module#ProjectsModule'
+  },
+  {
+    path: 'dashboard',
+    loadChildren: 'app/features/dashboard/dashboard.module#DashboardModule'
+  },
+  {
+    path: '404',
+    loadChildren: 'app/features/notfound/notfound.module#NotFoundModule'
   },
   {
     path: '**',
-    redirectTo: ''
+    redirectTo: '404'
   }
 ];
 
