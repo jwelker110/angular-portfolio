@@ -16,8 +16,9 @@ $theme-subtle-color: #888 !default;
 $theme-text-color: #000 !default;
 $theme-bg-color: #fff !default;
 
+$theme-title-font-family: "Open Sans Condensed", "sans-serif" !default;
 $theme-title-weight: bold !default;
-$theme-title-style: italic !default;
+$theme-title-style: inherit !default;
 $theme-nav-font-variant: small-caps !default;
 
 $theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color !default;
