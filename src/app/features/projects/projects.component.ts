@@ -1,24 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProjectService} from "../../services/project.service";
 import {Project} from "../../models/models";
+import {routerTransition, projectTransition} from "../../animations/app-animations";
+
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: 'projects.component.html',
-  styleUrls: ['projects.component.scss']
+    selector: 'app-projects',
+    templateUrl: 'projects.component.html',
+    styleUrls: ['projects.component.scss'],
+    animations: [routerTransition(), projectTransition()],
+    host: {'[@routerTransition]': ''}
 })
 export class ProjectsComponent implements OnInit {
 
-  projects: Project[] = [];
+    projects: Project[] = [];
 
-  constructor(private projectService: ProjectService) { }
+    constructor(private projectService: ProjectService) {
+    }
 
-  ngOnInit() {
-    this.projectService.getProjects().subscribe((val) => {
-      this.projects = val.json();
-    }, (err) => {
-      console.error(err);
-    });
-  }
+    ngOnInit() {
 
+        let delayedProjects = this.projectService.getProjects()
+            .concatAll()
+            .flatMap((obs) => {
+                return obs;
+            });
+
+        delayedProjects.subscribe((proj) => {
+            this.projects.push(proj);
+        });
+
+    }
 }

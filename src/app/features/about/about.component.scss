@@ -1,19 +1,5 @@
 @import '../../../styles/stylesheets/bootstrap/variables';
 
-
-:host {
-  display: block;
-  min-height: 100%;
-  padding-top: 50px;
-  /* equal to footer height */
-  margin-bottom: -$footer-height;
-}
-:host:after {
-  content: "";
-  display: block;
-  height: $footer-height;
-}
-
 #about {
 
   &-img {
@@ -29,8 +15,8 @@
     text-align: center;
   }
 
-
   &-location {
+    font-family: $theme-title-font-family;
     color: $theme-subtle-color;
 
     > .fa {
@@ -59,7 +45,7 @@
     font-size: 14px;
     //font-style: italic;
     font-variant: small-caps;
-    color: $theme-subtle-color;
+    color: $theme-text-color;
     border-top: solid 1px $theme-border-color;
     border-bottom: solid 1px $theme-border-color;
     padding: 10px;

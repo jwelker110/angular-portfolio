@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-md-4" *ngFor="let project of projects">
-      <app-project-flat [project]="project"></app-project-flat>
+    <div class="col-sm-6 col-md-4" [@projectTransition] (click)="toggleSomething()" *ngFor="let project of projects">
+      <app-project [project]="project"></app-project>
     </div>
   </div>
 </div>
