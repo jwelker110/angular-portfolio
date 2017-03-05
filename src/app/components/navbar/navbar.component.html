@@ -22,7 +22,7 @@
   <div class="navbar-collapse navbar-right" [ngClass]="{'nav-open': navOpen}">
     <ul class="nav navbar-nav">
       <li *ngFor="let nav of navs">
-        <a [routerLinkActive]="'active'" [routerLink]="nav.route" (click)="closeNav()">{{nav.text}}</a>
+        <a [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="nav.route" (click)="closeNav()">{{nav.text}}</a>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
