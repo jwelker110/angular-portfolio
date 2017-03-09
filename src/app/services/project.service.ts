@@ -13,18 +13,25 @@ export class ProjectService {
     }
 
     getProjects() {
-        // if (this._projects) {
-        //     return Observable.from(this._projects).delay(1000);
-        // }
-        // console.log(this._projects);
+        if (this._projects) {
+            let i = 0;
+            // TODO: this is uglyyyyyyy
+            return Observable.of(Observable.from(this._projects).map((project) => {
+                i++;
+                return Observable.of(project).delay(i * 250);
+            }))
+                .catch((error: any) => {
+                    return Observable.throw(error);
+                });
+        }
         // // hasn't been retrieved yet
-        let respItems = [];
+        this._projects = [];
 
         return this._http.get('/api/v1/projects')
             .map((resp) => {
                 return Observable.from(resp.json()).map((project) => {
-                    respItems.push(project);
-                    return Observable.of(project).delay(respItems.length * 250);
+                    this._projects.push(<Project>project);
+                    return Observable.of(project).delay(this._projects.length * 250);
                 });
             })
             .catch((error: Response | any) => {
