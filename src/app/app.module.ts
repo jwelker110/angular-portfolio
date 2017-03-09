@@ -7,21 +7,19 @@ import {AppComponent} from './app.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {SharedModule} from "./modules/shared.module";
-import {AboutComponent} from "./features/about/about.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    NavbarComponent,
-    AboutComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-  SharedModule,
+    SharedModule,
     SharedModule.forRoot()
   ],
   providers: [],
