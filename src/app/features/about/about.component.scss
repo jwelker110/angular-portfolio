@@ -1,5 +1,9 @@
 @import '../../../styles/stylesheets/bootstrap/variables';
 
+$border-width-normal: $border-width-normal;
+$border-width-thin: $border-width-thin;
+$theme-border-normal: $theme-border-normal;
+
 #about {
 
   &-img {
@@ -7,8 +11,8 @@
     max-width: 125px;
     display: block;
     margin: auto;
-    border: solid 1px $theme-highlight-color;
-    box-shadow: $theme-subtle-shadow;
+    border: $theme-border-normal;
+    //box-shadow: $theme-shadow-normal;
   }
 
   &-name, &-location {
@@ -46,8 +50,8 @@
     //font-style: italic;
     font-variant: small-caps;
     color: $theme-text-color;
-    border-top: solid 1px $theme-border-color;
-    border-bottom: solid 1px $theme-border-color;
+    border-top: $theme-border-normal;
+    border-bottom: $theme-border-normal;
     padding: 10px;
   }
 }

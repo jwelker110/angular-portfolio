@@ -1,7 +1,6 @@
-import {Component, OnInit, animate, style, transition, state, trigger} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProfileService} from "../../services/profile.service";
 import {routerTransition} from "../../animations/app-animations";
-import {ProjectService} from "../../services/project.service";
 
 export interface UserSkill {
     name: string;
@@ -43,13 +42,13 @@ export class AboutComponent implements OnInit {
         bio: ''
     };
 
-    constructor(private profileService: ProfileService, private projectService: ProjectService) {
+    constructor(private profileService: ProfileService) {
     }
 
     ngOnInit() {
 
         this.profileService.getProfile().subscribe((val) => {
-            this.userProfile = val.json();
+            this.userProfile = val;
         }, (err) => {
             console.log(err);
         });

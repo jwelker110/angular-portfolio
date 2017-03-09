@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
             });
 
         delayedProjects.subscribe((proj) => {
-            this.projects.push(proj);
+            this.projects.push(<Project>proj);
         });
 
     }
