@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: 'app/features/projects/projects.module#ProjectsModule'
   },
   {
-    path: 'dashboard',
-    loadChildren: 'app/features/dashboard/dashboard.module#DashboardModule'
-  },
-  {
     path: '404',
     loadChildren: 'app/features/notfound/notfound.module#NotFoundModule'
   },
