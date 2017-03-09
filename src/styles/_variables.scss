@@ -8,10 +8,15 @@
 // //
 // // Variables
 // // --------------------------------------------------
-$footer-height: 50px;
-$body-padding-top: 50px;
+$footer-height: 50px !default;
+$body-padding-top: 50px !default;
+$border-width-normal: 2px !default;
+$border-width-thin: 1px !default;
 
-$theme-highlight-color: $color-light-orange !default;
+$theme-border-normal: solid $border-width-normal $theme-highlight-color !default;
+$theme-border-thin: solid $border-width-thin $theme-highlight-color !default;
+
+$theme-highlight-color: mat-pale $mat-yellow !default;
 $theme-subtle-color: #888 !default;
 $theme-text-color: #000 !default;
 $theme-bg-color: #fff !default;
@@ -21,11 +26,12 @@ $theme-title-weight: bold !default;
 $theme-title-style: inherit !default;
 $theme-nav-font-variant: small-caps !default;
 
-$theme-subtle-shadow: 0 0 10px -2px $theme-highlight-color !default;
+$theme-shadow-subtle: 0 0 10px -2px $theme-highlight-color !default;
+$theme-shadow-normal: 0 0 10px 0px $theme-highlight-color !default;
 $theme-border-color: $theme-highlight-color !default;
 
 $theme-navbar-transparency: .1 !default;
-$navbar-default-bg: transparentize($theme-bg-color, $theme-navbar-transparency);
+$navbar-default-bg: transparentize($theme-bg-color, $theme-navbar-transparency) !default;
 
 // //== Colors
 // //

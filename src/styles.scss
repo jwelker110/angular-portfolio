@@ -5,19 +5,20 @@
 * {
   margin: 0;
 }
+
 html, body {
   font-family: "Raleway", 'sans-serif';
   height: 100%;
 }
 
 body {
-  padding-top: $navbar-height + 1 + $body-padding-top;
+  padding-top: $navbar-height + 1px;
   background: $theme-bg-color;
   color: $theme-text-color;
 }
 
 hr {
-  border-color: $theme-border-color;
+  border-top: $theme-border-normal;
 }
 
 a {
@@ -44,9 +45,10 @@ a {
 
 .port-section {
   &-title {
+    font-family: $theme-title-font-family;
     font-weight: $theme-title-weight;
     font-style: $theme-title-style;
-    color: $theme-subtle-color;
+    color: $theme-text-color;
     font-size: 1.1em;
   }
 }
@@ -65,7 +67,6 @@ a {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 2px;
 }
-
 
 @media screen and (max-width: 991px) {
   body {
