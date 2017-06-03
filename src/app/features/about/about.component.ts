@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ProfileService} from "../../services/profile.service";
+import {Component, OnInit} from "@angular/core";
 import {routerTransition} from "../../animations/app-animations";
+import {ProfileService} from "../../services/profile.service";
 
 export interface UserSkill {
     name: string;
@@ -22,6 +22,8 @@ interface UserProfile {
     links?: Link[];
     stackOverflow?: string;
     personalSite?: string;
+    locationCity?: string;
+    locationRegion?: string;
 }
 
 interface Link {
