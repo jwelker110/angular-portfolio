@@ -1,0 +1,73 @@
+{
+  "avatarUrl": "profile.jpg",
+  "name": "Jonathan Welker",
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": 2
+    },
+    {
+      "name": "Angular 2",
+      "level": 2
+    },
+    {
+      "name": "HTML",
+      "level": 2
+    },
+    {
+      "name": "CSS",
+      "level": 2
+    },
+    {
+      "name": "Python",
+      "level": 2
+    },
+    {
+      "name": "Bootstrap",
+      "level": 2
+    },
+    {
+      "name": "SQL",
+      "level": 1
+    }
+  ],
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti, ea eaque ipsam modi recusandae sunt. Dolorem praesentium sapiente sed. Explicabo, maxime, veniam! Aspernatur, ut!",
+  "details": [
+    {
+      "title": "What do you enjoy most about web development?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti, ea eaque ipsam modi recusandae sunt. Dolorem praesentium sapiente sed. Explicabo, maxime, veniam! Aspernatur, ut!"
+    },
+    {
+      "title": "If you could master any one technology, language or framework this upcoming year, what would that be and why?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloribus eaque, earum eveniet id ipsum iste natus nulla officia pariatur, quam, quas recusandae reiciendis repellat tenetur totam ut velit veniam veritatis voluptas! Amet corporis cumque hic molestias nemo provident quaerat?"
+    },
+    {
+      "title": "What are the qualities you most desire in a work environment and/or manager?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti, ea eaque ipsam modi recusandae sunt. Dolorem praesentium sapiente sed. Explicabo, maxime, veniam! Aspernatur, ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  ],
+  "locationCity": "Anytown",
+  "locationRegion": "USA",
+  "links": [
+    {
+      "url": "https://www.linkedin.com/in/jonathanzwelker/",
+      "text": "LinkedIn",
+      "icon": "linkedin"
+    },
+    {
+      "url": "https://github.com/jwelker110",
+      "text": "GitHub",
+      "icon": "github"
+    },
+    {
+      "url": "http://stackoverflow.com/users/5626385/jonathan-welker",
+      "text": "Stack Overflow",
+      "icon": "stack-overflow"
+    },
+    {
+      "url": "http://scalablewebdesign.net",
+      "text": "Personal Website",
+      "icon": "user"
+    }
+  ]
+}

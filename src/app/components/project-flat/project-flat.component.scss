@@ -1,0 +1,60 @@
+@import '../../../styles/stylesheets/bootstrap/variables';
+
+$title-color: $theme-highlight-color;
+$link-color: $theme-highlight-color;
+$link-font-variant: $theme-nav-font-variant;
+$description-color: $theme-subtle-color;
+
+:host {
+  display: block;
+  min-height: 100%;
+  padding-top: 50px;
+  /* equal to footer height */
+  margin-bottom: -$footer-height;
+}
+:host:after {
+  content: "";
+  display: block;
+  height: $footer-height;
+}
+
+.project {
+
+  &-title {
+    text-align: center;
+    color: $title-color;
+  }
+
+  &-image {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  &-link {
+
+    &-container {
+      text-align: center;
+      bottom: 0;
+      font-size: 14px;
+
+      > a {
+        font-variant: $link-font-variant;
+        color: $link-color;
+
+        &:hover {
+          transition: color .6s linear;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &-description {
+    text-align: center;
+    margin: 10px 0;
+    color: $description-color;
+  }
+}

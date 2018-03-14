@@ -1,0 +1,12 @@
+<div class="container">
+  <div>
+    <h3>Project Title</h3>
+    <img class="project-image"
+         [src]="project.imageUrl ? '/assets/img/' + project.imageUrl : 'https://placehold.it/288x160'"
+         alt="Project Image">
+    <p>{{project.description}}</p>
+    <a [href]="project.projectLiveUrl"></a>
+    <a [href]="project.projectRepoUrl"></a>
+  </div>
+
+</div>

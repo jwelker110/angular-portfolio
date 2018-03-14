@@ -1,0 +1,37 @@
+@import '../../../styles/stylesheets/bootstrap/variables';
+
+$title-color: $theme-highlight-color;
+
+.dashboard-container {
+  display: flex;
+  flex-flow: column;
+
+  form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  md-input-container, md-select {
+    width: 100%;
+    max-width: 320px;
+    font-family: "Raleway", 'sans-serif';
+  }
+
+  .form-title {
+    font-family: "Open Sans Condensed", 'sans-serif';
+    color: $title-color;
+  }
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
