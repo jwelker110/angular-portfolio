@@ -1,3 +1,6 @@
+@import '../../node_modules/sass-material-colors/sass/sass-material-colors';
+
+
 $color-dark-purple: #5e0e8a;
 $color-purple: #a314b2;
 $color-light-purple: #bd57ff;
@@ -22,4 +25,6 @@ $color-light-blue: #8bd0ff;
 $color-blue: #4267b2;
 $color-dark-blue: #140e6e;
 
-$theme-highlight-color: $color-yellow;
+// Select one of the colors above, or for a match with Material colors,
+// use the material-color function https://github.com/minusfive/sass-material-colors
+$theme-highlight-color: material-color('yellow', '800');

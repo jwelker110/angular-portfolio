@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {ProjectService} from "../../services/project.service";
-import {Project} from "../../models/models";
-import {routerTransition, projectTransition} from "../../animations/app-animations";
+import {projectTransition, routerTransition} from '../../animations/app-animations';
+import {Project} from '../../models/models';
+import {ProjectService} from '../../services/project.service';
 
 
 @Component({
@@ -31,4 +31,6 @@ export class ProjectsComponent implements OnInit {
         });
 
     }
+
+    toggleSomething() {}
 }

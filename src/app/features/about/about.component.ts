@@ -1,36 +1,10 @@
-import {Component, OnInit} from "@angular/core";
-import {routerTransition} from "../../animations/app-animations";
-import {ProfileService} from "../../services/profile.service";
+import {Component, OnInit} from '@angular/core';
+import 'rxjs/add/operator/concatMap';
+import 'rxjs/add/operator/throttleTime';
+import {routerTransition} from '../../animations/app-animations';
+import {UserProfile} from '../../models/models';
+import {ProfileService} from '../../services/profile.service';
 
-export interface UserSkill {
-    name: string;
-    level: number;
-}
-
-export interface UserDetail {
-    title?: string;
-    content: string;
-}
-
-interface UserProfile {
-    avatarUrl?: string;
-    name: string;
-    skills?: UserSkill[];
-    bio?: string;
-    details?: UserDetail[];
-    resume?: string;
-    links?: Link[];
-    stackOverflow?: string;
-    personalSite?: string;
-    locationCity?: string;
-    locationRegion?: string;
-}
-
-interface Link {
-    url: string;
-    text: string;
-    icon?: string;
-}
 
 @Component({
     templateUrl: 'about.component.html',

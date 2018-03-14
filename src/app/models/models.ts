@@ -7,11 +7,19 @@ export interface UserProfile {
   avatarUrl?: string;
   name: string;
   skills?: UserSkill[];
+  details?: Detail[];
   bio: string;
   resume?: string;
   links?: Link[];
   stackOverflow?: string;
   personalSite?: string;
+  locationCity?: string;
+  locationRegion?: string;
+}
+
+export interface Detail {
+    title: string;
+    content: string;
 }
 
 export interface Link {

@@ -4,7 +4,7 @@
  */
 //@import "themes/dark";
 
-// $bootstrap-sass-asset-helper: false !default;
+$bootstrap-sass-asset-helper: false;
 // //
 // // Variables
 // // --------------------------------------------------
@@ -16,7 +16,7 @@ $border-width-thin: 1px !default;
 $theme-border-normal: solid $border-width-normal $theme-highlight-color !default;
 $theme-border-thin: solid $border-width-thin $theme-highlight-color !default;
 
-$theme-highlight-color: mat-pale $mat-yellow !default;
+$theme-highlight-color: $color-blue !default;
 $theme-subtle-color: #888 !default;
 $theme-text-color: #000 !default;
 $theme-bg-color: #fff !default;
@@ -109,7 +109,7 @@ $navbar-default-bg: transparentize($theme-bg-color, $theme-navbar-transparency) 
 
 // // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-// $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
+ $icon-font-path: "/fonts/";
 
 // //** File name for all font files.
 // $icon-font-name:          "glyphicons-halflings-regular" !default;
