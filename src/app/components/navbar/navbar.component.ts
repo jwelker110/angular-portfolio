@@ -1,36 +1,34 @@
 import {Component, Input, OnInit} from '@angular/core';
-import Timer = NodeJS.Timer;
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+    selector: 'app-navbar',
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  @Input() brand: Nav;
-  @Input() navs: Nav[];
+    @Input() brand: Nav;
+    @Input() navs: Nav[];
 
-  navOpen = false;
-  timeoutId: Timer;
+    navOpen = false;
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  ngOnInit() {
+    ngOnInit() {
 
-  }
+    }
 
-  toggleNav = () => {
-    this.navOpen = !this.navOpen;
-  };
+    toggleNav = () => {
+        this.navOpen = !this.navOpen;
+    };
 
-  closeNav = () => {
-    this.navOpen = false;
-  }
+    closeNav = () => {
+        this.navOpen = false;
+    };
 
 }
 
 type Nav = {
-  route: string;
-  text: string;
+    route: string;
+    text: string;
 }

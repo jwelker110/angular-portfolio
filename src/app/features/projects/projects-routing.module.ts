@@ -3,15 +3,15 @@ import {ProjectsComponent} from "./projects.component";
 import {RouterModule, Routes} from "@angular/router";
 
 const ROUTES: Routes = [
-  {
-    path: '',
-    component: ProjectsComponent
-  }
+    {
+        path: '',
+        component: ProjectsComponent
+    }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(ROUTES)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(ROUTES)],
+    exports: [RouterModule]
 })
 export class ProjectsRoutingModule {
 }

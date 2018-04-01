@@ -13,7 +13,7 @@ export function routerTransition() {
                 transform: 'translateX(100%)',
                 opacity: '0'
             }),
-            animate('.6s ' + easeInOutCubic, style({ transform: 'translateX(0%)', opacity: '1'}))
+            animate('.6s ' + easeInOutCubic, style({transform: 'translateX(0%)', opacity: '1'}))
         ]),
         transition('* => void', [
             style({
@@ -24,7 +24,7 @@ export function routerTransition() {
                 transform: 'translateX(0%)',
                 opacity: '1'
             }),
-            animate('.4s ' + easeInOutCubic, style({ transform: 'translateX(-100%)', opacity: '0'}))
+            animate('.4s ' + easeInOutCubic, style({transform: 'translateX(-100%)', opacity: '0'}))
         ])
     ]);
 }

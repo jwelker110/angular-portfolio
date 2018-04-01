@@ -1,21 +1,22 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-skill',
-  templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.scss']
+    selector: 'app-skill',
+    templateUrl: './skill.component.html',
+    styleUrls: ['./skill.component.scss']
 })
 export class SkillComponent implements OnInit {
-  @Input() skill: Skill;
+    @Input() skill: Skill;
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }
 
 interface Skill {
-  name: string;
-  level: number;
+    name: string;
+    level: number;
 }

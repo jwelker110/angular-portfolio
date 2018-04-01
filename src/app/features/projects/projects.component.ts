@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProjectService} from "../../services/project.service";
 import {Project} from "../../models/models";
-import {routerTransition, projectTransition} from "../../animations/app-animations";
+import {projectTransition, routerTransition} from "../../animations/app-animations";
 
 
 @Component({

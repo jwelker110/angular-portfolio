@@ -32,6 +32,6 @@ export class ProfileService {
                 }
                 console.error(errMsg);
                 return Observable.throw(errMsg);
-            })
+            });
     }
 }
