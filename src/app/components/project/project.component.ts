@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Project} from "../../models/models";
+import {Project} from '../../models/models';
+import {Entry} from 'contentful';
 
 @Component({
     selector: 'app-project',
@@ -7,7 +8,7 @@ import {Project} from "../../models/models";
     styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
-    @Input() project: Project;
+    @Input() project: Entry<Project>;
 
     constructor() {
     }

@@ -1,6 +1,6 @@
-<div class="container" [@routerTransition]>
-  <div class="row">
-    <div class="col-sm-6 col-md-4" [@projectTransition] (click)="toggleSomething()" *ngFor="let project of projects">
+<div class="container">
+  <div class="row mt-5 mb-5" *ngFor="let project of projects">
+    <div class="col-10 col-sm-8 col-md-8 col-lg-6 offset-1 offset-sm-2 offset-md-2 offset-lg-3">
       <app-project [project]="project"></app-project>
     </div>
   </div>

@@ -1,29 +1,49 @@
+<nav class="navbar fixed-top navbar-expand-sm">
+  <a class="navbar-brand" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
+     [routerLink]="brand.route || ''" (click)="closeNav()">
+      <span class="navbar-brand-desktop"><span class="fas fa-home" aria-hidden="true"></span></span>
+      <span class="navbar-brand-mobile"><span class="fas fa-home"></span></span>
+  </a>
+  <button type="button" class="navbar-toggler" (click)="toggleNav()">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
-<nav class="navbar navbar-default navbar-fixed-top container-fluid" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" (click)="toggleNav()">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-      <a class="navbar-brand" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="brand.route || ''" (click)="closeNav()">
-        <span class="navbar-brand-desktop">
-          <i class="fa fa-home" aria-hidden="true"></i>
-        </span>
-        <span class="navbar-brand-mobile">
-          <i class="fa fa-home"></i>
-        </span>
-      </a>
-    </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="navbar-collapse navbar-right" [ngClass]="{'nav-open': navOpen}">
-    <ul class="nav navbar-nav">
-      <li *ngFor="let nav of navs">
-        <a [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="nav.route" (click)="closeNav()">{{nav.text}}</a>
-      </li>
+    <ul class="navbar-nav">
+      <ng-container *ngFor="let nav of navs">
+        <li class="nav-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" [routerLink]="nav.route" (click)="closeNav()">{{nav.text}}</a>
+        </li>
+      </ng-container>
     </ul>
-  </div><!-- /.navbar-collapse -->
+  </div>
+
+  <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+    <!--<ul class="navbar-nav mr-auto">-->
+      <!--<li class="nav-item active">-->
+        <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#">Link</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item dropdown">-->
+        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+          <!--Dropdown-->
+        <!--</a>-->
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+          <!--<a class="dropdown-item" href="#">Action</a>-->
+          <!--<a class="dropdown-item" href="#">Another action</a>-->
+          <!--<div class="dropdown-divider"></div>-->
+          <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        <!--</div>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
 </nav>
+

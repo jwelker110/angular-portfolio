@@ -1,6 +1,5 @@
-import {Component, OnInit} from "@angular/core";
-import {routerTransition} from "../../animations/app-animations";
-import {ProfileService} from "../../services/profile.service";
+import {Component, OnInit} from '@angular/core';
+import {ProfileService} from '../../services/profile.service';
 
 export interface UserSkill {
     name: string;
@@ -34,9 +33,7 @@ interface Link {
 
 @Component({
     templateUrl: 'about.component.html',
-    styleUrls: ['about.component.scss'],
-    animations: [routerTransition()],
-    host: {'[@routerTransition]': ''}
+    styleUrls: ['about.component.scss']
 })
 export class AboutComponent implements OnInit {
     userProfile: UserProfile = {

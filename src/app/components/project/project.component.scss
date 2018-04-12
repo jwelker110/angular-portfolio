@@ -1,4 +1,4 @@
-@import '../../../styles/stylesheets/bootstrap/variables';
+@import '../../../styles/variables';
 
 $title-color: $theme-highlight-color;
 $link-color: $theme-highlight-color;
@@ -43,50 +43,6 @@ $description-color: $theme-subtle-color;
     text-align: center;
     margin: 10px 0;
     color: $description-color;
-  }
-}
-
-.card {
-  transition: .8s;
-  transform-style: preserve-3d;
-  position: relative;
-
-  &-container {
-    margin: 25px auto;
-    perspective: 1000px;
-
-    &:hover .card, &.hover .flipper {
-      transform: rotateY(180deg);
-    }
-  }
-
-  &-container, &-front, &-back {
-    width: 100%;
-    max-width: 320px;
-    height: 420px;
-  }
-
-  &-front, &-back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &-front {
-    z-index: 2;
-    transform: rotateY(0deg);
-  }
-
-  &-back {
-    transform: rotateY(180deg);
-  }
-
-  &-side-container {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
 

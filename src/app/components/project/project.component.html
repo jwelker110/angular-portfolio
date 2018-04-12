@@ -1,21 +1,13 @@
-<div class="card-container">
-  <div class="card">
-    <div class="card-front">
-      <div class="card-side-container">
-        <h3 class="project-title">{{project.title}}</h3>
-        <!--ideal size here is 288x160 - ish-->
-        <img class="project-image" [src]="project.imageUrl ? '/assets/img/' + project.imageUrl : 'https://placehold.it/288x160'" alt="project image">
-      </div>
-    </div>
-    <div class="card-back">
-      <div class="card-side-container">
-        <p class="project-description">{{project.description}}</p>
-        <div class="project-link-container">
-          <a *ngIf="project.projectLiveUrl" [href]="project.projectLiveUrl" target="_blank">See it live</a><span
-          *ngIf="project.projectLiveUrl && project.projectRepoUrl"> | </span>
-          <a *ngIf="project.projectRepoUrl" [href]="project.projectRepoUrl" target="_blank">View the source</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<p-card>
+  <p-header>
+    <h3 class="ui-card-header-title">{{project.fields.title}}</h3>
+  </p-header>
+
+  <p>{{project.fields.shortDescription}}</p>
+
+  <p-footer>
+    <a *ngIf="project.fields.liveUrl" [href]="project.fields.liveUrl" target="_blank">See it live</a><span
+          *ngIf="project.fields.liveUrl && project.fields.sourceUrl"> | </span>
+    <a *ngIf="project.fields.sourceUrl" [href]="project.fields.sourceUrl" target="_blank">View the source</a>
+  </p-footer>
+</p-card>

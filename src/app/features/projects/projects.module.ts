@@ -1,15 +1,17 @@
-import {NgModule} from "@angular/core";
-import {ProjectsComponent} from "./projects.component";
-import {SharedModule} from "../../modules/shared.module";
-import {ProjectsRoutingModule} from "./projects-routing.module";
-import {ProjectComponent} from "../../components/project/project.component";
-
-// import {ProjectFlatComponent} from "../../components/project-flat/project-flat.component";
+import {NgModule} from '@angular/core';
+import {ProjectsComponent} from './projects.component';
+import {CommonSharedModule} from '../../modules/common-shared.module';
+import {ProjectsRoutingModule} from './projects-routing.module';
+import {ProjectComponent} from '../../components/project/project.component';
+import {SharedModule} from 'primeng/shared';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
     imports: [
+        CommonSharedModule,
+        ProjectsRoutingModule,
         SharedModule,
-        ProjectsRoutingModule
+        CardModule
     ],
     declarations: [ProjectsComponent, ProjectComponent]
 })

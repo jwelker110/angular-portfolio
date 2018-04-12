@@ -24,7 +24,9 @@
       "primeng/primeng",
       "rxjs/interfaces",
       "rxjs/internal",
-      "rxjs/symbol"
+      "rxjs/symbol",
+      "rxjs/add",
+      "rxjs"
     ],
     "import-spacing": true,
     "indent": [

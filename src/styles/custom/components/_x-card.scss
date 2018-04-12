@@ -1,0 +1,45 @@
+// CARD
+@mixin xCard() {
+  $uiCardBg:                    #fff !default;
+  $uiCardColor:                 #424242 !default;
+  $uiCardBorder:                solid 1px transparent !default;
+  $uiCardRadius:                5px !default;
+  $uiCardShadow:                xCardShadow("3") !default;
+
+  .ui-card-header img {
+    width: 100%;
+  }
+
+  .ui-card-body {
+    padding: 1em;
+  }
+
+  .ui-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+
+  .ui-card-subtitle {
+    opacity: .7;
+    margin-bottom: .5em;
+    margin-top: -.25em;
+    font-weight: bold;
+  }
+
+  .ui-card-content {
+    line-height: 1.5;
+  }
+
+  .ui-card-footer {
+    padding-top: 1em;
+  }
+
+  .ui-card {
+    background: $uiCardBg;
+    color: $uiCardColor;
+    border: $uiCardBorder;
+    border-radius: $uiCardRadius;
+    box-shadow: $uiCardShadow;
+  }
+}

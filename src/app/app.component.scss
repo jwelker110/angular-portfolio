@@ -1,9 +1,9 @@
-@import '../styles/stylesheets/bootstrap/variables';
+@import '../styles/variables';
+@import '../styles/custom/x-imports';
 
 .router-container {
   display: block;
-  min-height: 100%;
-  padding-top: 50px;
+  min-height: calc(100vh - #{$navbar-height});
   /* equal to footer height */
   margin-bottom: -$footer-height;
 }
@@ -12,4 +12,24 @@
   content: "";
   display: block;
   height: $footer-height;
+}
+
+.cta {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 40px;
+  z-index: 1;
+  background: #fff;
+  height: 42px;
+  width: 42px;
+  line-height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: xCardShadow("4");
+  border: solid 1px #fff;
+
+  &:hover {
+    color: $anchorColor;
+  }
 }

@@ -1,0 +1,31 @@
+
+@mixin xFontSize() {
+  /**
+   * Creates font size classes for em and rem based adjustments
+   */
+  $fs: .5;
+  @while $fs < 1 {
+    .fs-em-0#{$fs * 10} {
+      font-size: "#{$fs}em";
+    }
+    .fs-rem-0#{$fs * 10} {
+      font-size: "#{$fs}rem";
+    }
+    $fs: $fs + .1;
+  }
+}
+
+@mixin xWidth() {
+  /**
+   * Creates width percentage classes
+   */
+  $w: 0;
+  @while $w < 101 {
+    .w-#{$w} {
+      width: "#{$w}%";
+    }
+    $w: $w + 10;
+  }
+}
+
+

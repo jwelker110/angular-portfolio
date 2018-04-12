@@ -1,34 +1,40 @@
 import {Component, OnInit} from '@angular/core';
-import {ProjectService} from "../../services/project.service";
-import {Project} from "../../models/models";
-import {projectTransition, routerTransition} from "../../animations/app-animations";
+import {Project} from '../../models/models';
+import {ContentfulApiService} from '../../modules/contentful/contentful-api.service';
+import {Entry, EntryCollection} from 'contentful';
+import {map} from 'rxjs/operators';
 
 
 @Component({
     selector: 'app-projects',
     templateUrl: 'projects.component.html',
-    styleUrls: ['projects.component.scss'],
-    animations: [routerTransition(), projectTransition()],
-    host: {'[@routerTransition]': ''}
+    styleUrls: ['projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
 
-    projects: Project[] = [];
+    projects: Entry<Project>[] = [];
 
-    constructor(private projectService: ProjectService) {
+    constructor(private _contentful: ContentfulApiService) {
     }
 
     ngOnInit() {
-
-        let delayedProjects = this.projectService.getProjects()
-            .concatAll()
-            .flatMap((obs) => {
-                return obs;
-            });
-
-        delayedProjects.subscribe((proj) => {
-            this.projects.push(<Project>proj);
+        this._contentful.getEntriesForType('project').pipe(
+            map((projects: EntryCollection<Project>) => {
+                if (!projects.includes || !projects.includes.Asset) {
+                    return projects;
+                }
+                for (const project of projects.items) {
+                    for (const asset of projects.includes.Asset) {
+                        if (project.fields.primaryImage && project.fields.primaryImage.sys.id === asset.sys.id) {
+                            project.fields.primaryImage = asset;
+                            break;
+                        }
+                    }
+                }
+                return projects;
+            })
+        ).subscribe((collection: EntryCollection<Project>) => {
+            this.projects = collection.items;
         });
-
     }
 }

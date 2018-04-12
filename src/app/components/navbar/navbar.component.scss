@@ -1,32 +1,73 @@
-@import '../../../styles/stylesheets/bootstrap/variables';
+@import '../../../styles/variables';
+@import '../../../styles/custom/x-imports';
 
 
-.active, .active:focus {
-  color: $theme-text-color !important;
-}
+//.active, .active:focus {
+//  color: $theme-text-color !important;
+//}
 
 .navbar-collapse,
 .navbar.navbar-default {
   border: none;
 }
 
-.nav.navbar-nav > li {
-  font-size: 20px;
+.nav-item.active {
+  .nav-link {
+    color: $defaultColor;
+  }
 }
 
-.nav.navbar-nav > li,
-.navbar-brand {
-  font-variant: $theme-nav-font-variant;
+.nav-link {
+  line-height: 32px;
+  padding: 4px .5rem;
+  font-size: 20px;
+  color: $navColor;
+}
+
+.navbar-right {
+  justify-content: flex-end;
 }
 
 .navbar-brand-mobile {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar.navbar-default {
-    width: 100%;
-    border-bottom: solid 1px $theme-border-color;
+.navbar {
+  padding: 5px 15px;
+  background: white;
+
+  .navbar-brand {
+    width: 32px;
+    text-align: center;
+    line-height: 32px;
+    padding: 4px 0;
+    font-size: 1.8em;
+  }
+}
+
+.navbar-toggler {
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+}
+
+.navbar-toggler .icon-bar {
+  width: 4px;
+  height: 4px;
+  border-radius: 33px;
+  background: $navColor;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 2px;
+}
+
+@media screen and (min-width: 575px) {
+  .navbar {
+    box-shadow: xCardShadow("3");
   }
 }
 
@@ -43,14 +84,16 @@
     border-bottom: solid 1px $theme-highlight-color;
   }
 
+  .nav-open {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 575px) {
   .navbar-collapse {
     text-align: right;
     transition: max-height .4s linear;
     max-height: 0;
     overflow-y: hidden;
-  }
-
-  .nav-open {
-    max-height: 300px;
   }
 }
