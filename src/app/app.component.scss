@@ -20,13 +20,14 @@
   bottom: 2rem;
   font-size: 40px;
   z-index: 1;
-  background: #fff;
   height: 42px;
   width: 42px;
   line-height: 40px;
   border-radius: 100%;
   text-align: center;
   box-shadow: xCardShadow("4");
+  color: $navColor;
+  background: #fff;
   border: solid 1px #fff;
   transition: color .4s cubic-bezier(.25,.8,.25,1), box-shadow 180ms cubic-bezier(.4,0,.2,1);
   cursor: default !important;

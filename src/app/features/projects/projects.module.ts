@@ -13,7 +13,10 @@ import {CardModule} from 'primeng/card';
         SharedModule,
         CardModule
     ],
-    declarations: [ProjectsComponent, ProjectComponent]
+    declarations: [
+        ProjectsComponent,
+        ProjectComponent
+    ]
 })
 export class ProjectsModule {
 }

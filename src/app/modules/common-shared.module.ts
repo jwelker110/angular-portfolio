@@ -4,11 +4,14 @@ import {CommonModule} from '@angular/common';
 import {ProfileService} from '../services/profile.service';
 import {ProjectService} from '../services/project.service';
 import {ContentfulApiModule} from './contentful/contentful-api.module';
+import {environment} from '../../environments/environment';
 
 @NgModule({
     imports: [
         CommonModule,
-        ContentfulApiModule
+        ContentfulApiModule.forChild({
+            spaceId: environment.spaceId
+        })
     ],
     declarations: [
         SkillComponent

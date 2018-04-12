@@ -6,6 +6,10 @@
 //  color: $theme-text-color !important;
 //}
 
+.navbar {
+  box-shadow: xCardShadow("3");
+}
+
 .navbar-collapse,
 .navbar.navbar-default {
   border: none;
@@ -37,15 +41,12 @@
   background: white;
 
   .navbar-brand {
+    color: $navColor;
     width: 32px;
     text-align: center;
     line-height: 32px;
     padding: 4px 0;
-    font-size: 1.8em;
-
-    &:hover {
-      color: $navColor;
-    }
+    font-size: 1.6rem;
   }
 }
 
@@ -69,11 +70,7 @@
   margin-top: 2px;
 }
 
-@media screen and (min-width: 575px) {
-  .navbar {
-    box-shadow: xCardShadow("3");
-  }
-}
+
 
 @media screen and (max-width: 767px) {
   .navbar-brand-desktop {
@@ -87,17 +84,19 @@
   .navbar-header {
     border-bottom: solid 1px $theme-highlight-color;
   }
-
-  .nav-open {
-    max-height: 300px;
-  }
 }
 
 @media screen and (max-width: 575px) {
   .navbar-collapse {
     text-align: right;
     transition: max-height .4s linear;
-    max-height: 0;
-    overflow-y: hidden;
+    &:not(.nav-open) {
+      max-height: 0;
+      overflow-y: hidden;
+    }
+  }
+
+  .nav-open {
+    max-height: 300px;
   }
 }

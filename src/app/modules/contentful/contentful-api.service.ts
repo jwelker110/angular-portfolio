@@ -1,26 +1,10 @@
 import {Inject, Injectable} from '@angular/core';
-import {
-    Asset,
-    AssetCollection,
-    ContentfulClientApi,
-    ContentType,
-    ContentTypeCollection,
-    createClient,
-    Entry,
-    EntryCollection,
-    Space,
-    SyncCollection
-} from 'contentful';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
+import {Asset, AssetCollection, ContentType, ContentTypeCollection, Entry, EntryCollection, Space, SyncCollection} from 'contentful';
 import {Observable} from 'rxjs/Observable';
-import {defer} from 'rxjs/observable/defer';
-import {fromPromise} from 'rxjs/observable/fromPromise';
-import {ContentfulApiConfig} from './contentful-api.config';
 import {CONFIG} from './contentful-api.token';
 import {ContentfulQuery, DefaultLinkedEntriesQuery} from './contentful-api.helpers';
 import {_throw} from 'rxjs/observable/throw';
-import {HttpClient, HttpParams} from '@angular/common/http';
-import {environment} from '../../../environments/environment';
+import {HttpClient} from '@angular/common/http';
 
 /**
  * Wrapper for the Contentful Api Client. Client methods that return promises are wrapped to return
@@ -32,10 +16,12 @@ import {environment} from '../../../environments/environment';
 @Injectable()
 export class ContentfulApiService {
 
-    private _spaceId = environment.spaceId;
-    private _baseUrl = `/spaces/${this._spaceId}`;
+    private readonly _baseUrl: string;
 
-    constructor(private _http: HttpClient) {
+    constructor(@Inject(CONFIG) private _config, private _http: HttpClient) {
+        if (_config.spaceId) {
+            this._baseUrl = `/spaces/${_config.spaceId}`;
+        }
     }
 
     public getAsset(id: string, query?: any);
