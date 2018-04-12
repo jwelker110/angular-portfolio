@@ -28,8 +28,17 @@
   text-align: center;
   box-shadow: xCardShadow("4");
   border: solid 1px #fff;
+  transition: color 250ms cubic-bezier(.4,0,.2,1), box-shadow 180ms cubic-bezier(.4,0,.2,1);
+  cursor: default !important;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: $anchorColor;
+  }
+
+  &:active {
+    color: darken($anchorColor, 15%);
+    box-shadow: xCardShadow("2");
   }
 }
