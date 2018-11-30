@@ -28,6 +28,14 @@ $navbar-default-bg:                 transparentize($theme-bg-color, $theme-navba
 $navbar-height:                     50px;
 $navColor:                          #424242;
 
+$colorMap: (
+        "primaryAccent":          #4A148C,
+        "primaryBase":            #9C27B0,
+        "secondaryAccent":        #00E676,
+        "secondaryBase":          #4CAF50,
+        "default":                #212121,
+);
+
 $anchorColor:                       #E91E63;
 $defaultColor:                      #212121;
 $accentColor:                       #4A148C;

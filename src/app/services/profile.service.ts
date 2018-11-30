@@ -80,22 +80,22 @@ export class ProfileService {
                 {
                     'url': 'https://www.linkedin.com/in/jonathanzwelker/',
                     'text': 'LinkedIn',
-                    'icon': 'linkedin'
+                    'icon': 'fab fa-linkedin'
                 },
                 {
                     'url': 'https://github.com/jwelker110',
                     'text': 'GitHub',
-                    'icon': 'github'
+                    'icon': 'fab fa-github'
                 },
                 {
                     'url': 'http://stackoverflow.com/users/5626385/jonathan-welker',
                     'text': 'Stack Overflow',
-                    'icon': 'stack-overflow'
+                    'icon': 'fab fa-stack-overflow'
                 },
                 {
                     'url': 'http://scalablewebdesign.net',
                     'text': 'Personal Website',
-                    'icon': 'user'
+                    'icon': 'fa fa-user'
                 }
             ]
         });

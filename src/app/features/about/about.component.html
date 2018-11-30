@@ -1,9 +1,18 @@
 <div class="container">
   <div class="row">
+    <div class="col-12">
+      <img src="/assets/img/profile.jpg" class="about-img" width="150px">
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
     <div class="col-xs-12">
       <img id="about-img" [src]="userProfile.avatarUrl ? '/assets/img/' + userProfile.avatarUrl : 'https://placehold.it/250x250'"/>
       <h3 class="port-vert-space" id="about-name"><strong>{{userProfile.name}}</strong></h3>
-      <h5 class="port-vert-space" id="about-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{userProfile.locationCity +
+      <h5 class="port-vert-space" id="about-location"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> {{userProfile.locationCity +
         (userProfile.locationRegion ? ', ' : '') + userProfile.locationRegion}}</h5>
     </div>
   </div>
@@ -12,7 +21,7 @@
     <div class="col-xs-12">
       <section class="port-vert-space" id="about-links">
         <a class="about-link inverted" target="_blank" [href]="link.url" *ngFor="let link of userProfile.links" [title]="link.text">
-          <i [ngClass]="link.icon ? 'fa fa-' + link.icon : ''"></i>
+          <i [ngClass]="link.icon"></i>
         </a>
       </section>
     </div>
